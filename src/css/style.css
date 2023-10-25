@@ -13,16 +13,24 @@ body {
   flex-direction: column;
 }
 .divider {
-  margin: 5rem 0;
+  margin: 5rem 0 2rem 0;
 }
 h1 {
   font-family: 'Twinkle Star';
   font-size: 4rem;
   color: #292a49;
   text-align: center;
+  font-weight: 700;
+}
+h2 {
+  font-family: 'Julius Sans One';
+  color: #292a49;
+  text-align: center;
+  font-weight: 300;
 }
 /* -- NAVBAR -- */
 .nav {
+  max-width: 1400px;
   width: 100%;
 }
 .nav .socialIcons a {
@@ -47,7 +55,7 @@ h1 {
   padding: 1rem 3rem;
 }
 .nav .navbar .logo {
-  width: 8rem;
+  width: 10rem;
   height: auto;
   margin: 0 50%;
 }
@@ -72,7 +80,8 @@ h1 {
 }
 /* -- MAIN -- */
 main {
-  width: 80%;
+  max-width: 1200px;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,17 +106,17 @@ main {
   text-align: center;
   position: relative;
   width: 100%;
-  filter: blur(5px) drop-shadow(0 5px 5px rgba(0, 0, 0, 0.7));
+  filter: blur(5px) drop-shadow(0 5px 3px rgba(0, 0, 0, 0.422));
   transition: 0.4s ease;
 }
 .showcase-section .showcase-card:hover {
-  filter: blur(0) drop-shadow(0 5px 5px rgba(0, 0, 0, 0.7));
+  filter: blur(0) drop-shadow(0 5px 3px rgba(0, 0, 0, 0.422));
   cursor: pointer;
   transform: translateY(-5px) scale(1.1);
 }
 .showcase-section .showcase-card:nth-child(2) {
   transform: translateY(-40px);
-  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.422));
 }
 .showcase-section .showcase-card:nth-child(2):hover {
   transform: translateY(-40px) scale(1.1);
