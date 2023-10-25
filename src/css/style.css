@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-family: 'Twinkle Star';
+}
+body {
+  background-color: #f7f9f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* -- NAVBAR -- */
+.nav {
+  width: 100%;
+}
+.nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10rem;
+}
+.nav .navbar ul {
+  display: flex;
+}
+.nav .navbar ul li {
+  margin-left: 1rem;
+}
+@font-face {
+  font-family: 'Twinkle Star';
+  src: url(../fonts/Twinkle_Star/TwinkleStar-Regular.ttf) format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Julius Sans One';
+  src: url(../fonts/JuliusSansOne-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(../fonts/Ubuntu-Light);
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(../fonts/Ubuntu-Regular);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(../fonts/Ubuntu-Bold);
+  font-weight: 700;
+}
