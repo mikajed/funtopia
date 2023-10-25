@@ -21,19 +21,26 @@ body {
 /* -- NAVBAR -- */
 .nav {
     width: 100%;
-}
 
-.nav .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 10rem;
-}
+    & .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 10rem;
 
-.nav .navbar ul {
-    display: flex;
-}
+        & ul {
+            display: flex;
+        }
 
-.nav .navbar ul li {
-    margin-left: 1rem;
+        & ul li {
+            margin-left: 1rem;
+            list-style-type: none;
+        }
+
+        & a {
+            color: #292a49;
+            text-decoration: none;
+            font-size: 1.3rem;
+        }
+    }
 }
