@@ -6,7 +6,7 @@
 body {
   background-color: #f7f9f4;
   background: url(../images/hero-bg.png) no-repeat;
-  background-size: cover;
+  background-size: contain;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,13 +17,13 @@ body {
 }
 h1 {
   font-family: 'Twinkle Star';
-  font-size: 6rem;
+  font-size: 4rem;
   color: #292a49;
   text-align: center;
 }
 /* -- NAVBAR -- */
 .nav {
-  min-width: 100%;
+  width: 100%;
 }
 .nav .socialIcons a {
   text-decoration: none;
@@ -44,11 +44,12 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 5rem;
+  padding: 1rem 3rem;
 }
 .nav .navbar .logo {
   width: 8rem;
   height: auto;
+  margin: 0 50%;
 }
 .nav .navbar ul {
   display: flex;
@@ -60,7 +61,7 @@ h1 {
 .nav .navbar ul li a {
   color: #292a49;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
   font-family: 'Julius Sans One';
   transition: 0.3s ease;
@@ -80,10 +81,10 @@ main {
 /* -- HERO SECTION -- */
 .hero-section {
   width: 60%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 60vh;
+  display: flex;
+  justify-content: center;
+  padding: 10% 0 0 0;
 }
 /* -- SHOWCASE SECTION -- */
 .showcase-section {
@@ -96,17 +97,17 @@ main {
   text-align: center;
   position: relative;
   width: 100%;
-  filter: blur(5px);
+  filter: blur(5px) drop-shadow(0 5px 5px rgba(0, 0, 0, 0.7));
   transition: 0.4s ease;
 }
 .showcase-section .showcase-card:hover {
-  filter: none;
+  filter: blur(0) drop-shadow(0 5px 5px rgba(0, 0, 0, 0.7));
   cursor: pointer;
   transform: translateY(-5px) scale(1.1);
 }
 .showcase-section .showcase-card:nth-child(2) {
   transform: translateY(-40px);
-  filter: none;
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.7));
 }
 .showcase-section .showcase-card:nth-child(2):hover {
   transform: translateY(-40px) scale(1.1);
@@ -114,14 +115,16 @@ main {
 .showcase-section .showcase-card .showcase-bottom {
   width: 100%;
   position: absolute;
-  bottom: 1px;
-  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 3px;
+  background: linear-gradient(to bottom, #0000007b, #343434);
+  backdrop-filter: blur(3px);
   color: #fff;
   padding: 2rem 0.5rem;
   font-family: 'Julius Sans One';
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+/* -- SLIDE GALLERY SECTION -- */
 @font-face {
   font-family: 'Twinkle Star';
   src: url(../fonts/Twinkle_Star/TwinkleStar-Regular.ttf) format('truetype');
