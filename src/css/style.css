@@ -6,15 +6,18 @@
 body {
   background-color: #f7f9f4;
   background: url(../images/hero-bg.png) no-repeat;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+.divider {
+  margin: 5rem 0;
+}
 h1 {
   font-family: 'Twinkle Star';
-  font-size: 4.5rem;
+  font-size: 6rem;
   color: #292a49;
   text-align: center;
 }
@@ -27,7 +30,7 @@ h1 {
   color: #292a49;
 }
 .nav .socialIcons svg {
-  width: 2rem;
+  width: 2.5rem;
   height: auto;
   margin-right: 0.6rem;
   transition: 0.3s ease;
@@ -44,7 +47,7 @@ h1 {
   padding: 1rem 5rem;
 }
 .nav .navbar .logo {
-  width: 5rem;
+  width: 8rem;
   height: auto;
 }
 .nav .navbar ul {
@@ -57,7 +60,7 @@ h1 {
 .nav .navbar ul li a {
   color: #292a49;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 700;
   font-family: 'Julius Sans One';
   transition: 0.3s ease;
@@ -104,6 +107,9 @@ main {
 .showcase-section .showcase-card:nth-child(2) {
   transform: translateY(-40px);
   filter: none;
+}
+.showcase-section .showcase-card:nth-child(2):hover {
+  transform: translateY(-40px) scale(1.1);
 }
 .showcase-section .showcase-card .showcase-bottom {
   width: 100%;
