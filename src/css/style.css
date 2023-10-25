@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f7f9f4;
+  background: url(../images/hero-bg.png) no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.divider {
+  margin: 5rem 0 2rem 0;
+}
+h1 {
+  font-family: 'Twinkle Star';
+  font-size: 4rem;
+  color: #292a49;
+  text-align: center;
+  font-weight: 700;
+}
+h2 {
+  font-family: 'Julius Sans One';
+  color: #292a49;
+  text-align: center;
+  font-weight: 300;
+}
+/* -- NAVBAR -- */
+.nav {
+  max-width: 1400px;
+  width: 100%;
+}
+.nav .socialIcons a {
+  text-decoration: none;
+  color: #292a49;
+}
+.nav .socialIcons svg {
+  width: 2.5rem;
+  height: auto;
+  margin-right: 0.6rem;
+  transition: 0.3s ease;
+}
+.nav .socialIcons svg:hover {
+  color: #cf8630;
+  transform: rotate(20deg);
+}
+.nav .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+.nav .navbar .logo {
+  width: 10rem;
+  height: auto;
+  margin: 0 50%;
+}
+.nav .navbar ul {
+  display: flex;
+}
+.nav .navbar ul li {
+  padding: 0 0.3rem;
+  list-style-type: none;
+}
+.nav .navbar ul li a {
+  color: #292a49;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: 'Julius Sans One';
+  transition: 0.3s ease;
+}
+.nav .navbar ul li a:hover {
+  text-decoration: underline;
+  color: #cf8630;
+}
+/* -- MAIN -- */
+main {
+  max-width: 1200px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* -- HERO SECTION -- */
+.hero-section {
+  width: 60%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0 0 0;
+}
+/* -- SHOWCASE SECTION -- */
+.showcase-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+}
+.showcase-section .showcase-card {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  filter: blur(5px) drop-shadow(0 5px 3px rgba(0, 0, 0, 0.422));
+  transition: 0.4s ease;
+}
+.showcase-section .showcase-card:hover {
+  filter: blur(0) drop-shadow(0 5px 3px rgba(0, 0, 0, 0.422));
+  cursor: pointer;
+  transform: translateY(-5px) scale(1.1);
+}
+.showcase-section .showcase-card:nth-child(2) {
+  transform: translateY(-40px);
+  filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.422));
+}
+.showcase-section .showcase-card:nth-child(2):hover {
+  transform: translateY(-40px) scale(1.1);
+}
+.showcase-section .showcase-card .showcase-bottom {
+  width: 100%;
+  position: absolute;
+  bottom: 3px;
+  background: linear-gradient(to bottom, #0000007b, #343434);
+  backdrop-filter: blur(3px);
+  color: #fff;
+  padding: 2rem 0.5rem;
+  font-family: 'Julius Sans One';
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/* -- SLIDE GALLERY SECTION -- */
+@font-face {
+  font-family: 'Twinkle Star';
+  src: url(../fonts/Twinkle_Star/TwinkleStar-Regular.ttf) format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Julius Sans One';
+  src: url(../fonts/Julius_Sans_One/JuliusSansOne-Regular.ttf) format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(../fonts/Ubuntu/Ubuntu-Light.ttf) format('truetype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf) format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url(../fonts/Ubuntu/Ubuntu-Bold.ttf) format('truetype');
+  font-weight: 700;
+}
