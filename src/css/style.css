@@ -30,10 +30,14 @@ body {
   margin-left: 1rem;
   list-style-type: none;
 }
-.nav .navbar a {
+.nav .navbar ul li a {
   color: #292a49;
   text-decoration: none;
   font-size: 1.3rem;
+  font-family: 'Julius Sans One';
+}
+.nav .navbar ul li a:hover {
+  text-decoration: underline;
 }
 @font-face {
   font-family: 'Twinkle Star';
@@ -42,21 +46,21 @@ body {
 }
 @font-face {
   font-family: 'Julius Sans One';
-  src: url(../fonts/JuliusSansOne-Regular.ttf);
+  src: url(../fonts/Julius_Sans_One/JuliusSansOne-Regular.ttf) format('truetype');
   font-weight: 400;
 }
 @font-face {
   font-family: 'Ubuntu';
-  src: url(../fonts/Ubuntu-Light);
+  src: url(../fonts/Ubuntu/Ubuntu-Light.ttf) format('truetype');
   font-weight: 300;
 }
 @font-face {
   font-family: 'Ubuntu';
-  src: url(../fonts/Ubuntu-Regular);
+  src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf) format('truetype');
   font-weight: 400;
 }
 @font-face {
   font-family: 'Ubuntu';
-  src: url(../fonts/Ubuntu-Bold);
+  src: url(../fonts/Ubuntu/Ubuntu-Bold.ttf) format('truetype');
   font-weight: 700;
 }

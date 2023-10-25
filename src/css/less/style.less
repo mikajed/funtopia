@@ -30,17 +30,22 @@ body {
 
         & ul {
             display: flex;
-        }
 
-        & ul li {
-            margin-left: 1rem;
-            list-style-type: none;
-        }
-
-        & a {
-            color: #292a49;
-            text-decoration: none;
-            font-size: 1.3rem;
+            & li {
+                margin-left: 1rem;
+                list-style-type: none;
+    
+                & a {
+                    color: #292a49;
+                    text-decoration: none;
+                    font-size: 1.3rem;
+                    font-family: 'Julius Sans One';
+        
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
         }
     }
 }
