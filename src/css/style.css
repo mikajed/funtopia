@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #f7f9f4;
   background: url(../images/hero-bg.png) no-repeat;
@@ -38,24 +41,44 @@ p {
   font-family: 'Julius Sans One';
   font-size: 1.2rem;
 }
-/* -- NAVBAR -- */
-.nav {
-  max-width: 1400px;
-  width: 100%;
+/* -- NAVS -- */
+ul {
+  display: flex;
 }
-.nav .socialIcons a {
+ul li {
+  padding: 0 0.3rem;
+  list-style-type: none;
+}
+ul li a {
+  color: #292a49;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: 'Julius Sans One';
+  transition: 0.3s ease;
+}
+ul li a:hover {
+  text-decoration: underline;
+  color: #cf8630;
+}
+.socialIcons a {
   text-decoration: none;
   color: #292a49;
 }
-.nav .socialIcons svg {
-  width: 2.5rem;
+.socialIcons svg {
+  width: 2rem;
   height: auto;
   margin-right: 0.6rem;
   transition: 0.3s ease;
 }
-.nav .socialIcons svg:hover {
+.socialIcons svg:hover {
   color: #cf8630;
   transform: rotate(20deg);
+}
+/* -- NAVBAR -- */
+.nav {
+  max-width: 1400px;
+  width: 100%;
 }
 .nav .navbar {
   width: 100%;
@@ -69,25 +92,6 @@ p {
   height: auto;
   margin: 0 50%;
 }
-.nav .navbar ul {
-  display: flex;
-}
-.nav .navbar ul li {
-  padding: 0 0.3rem;
-  list-style-type: none;
-}
-.nav .navbar ul li a {
-  color: #292a49;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 700;
-  font-family: 'Julius Sans One';
-  transition: 0.3s ease;
-}
-.nav .navbar ul li a:hover {
-  text-decoration: underline;
-  color: #cf8630;
-}
 /* -- MAIN -- */
 main {
   max-width: 1200px;
@@ -98,7 +102,7 @@ main {
   align-items: center;
 }
 /* -- HERO SECTION -- */
-.hero-section {
+#hero-section {
   width: 60%;
   height: 60vh;
   display: flex;
@@ -216,13 +220,22 @@ main {
 /* -- FOOTER -- */
 footer {
   width: 100%;
-  padding: 5rem 0;
+  padding: 10rem 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background: url(../images/footer-bg.png) no-repeat;
   background-size: cover;
   margin-top: 5rem;
+  position: relative;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10rem;
+  position: absolute;
+  bottom: 1rem;
 }
 @font-face {
   font-family: 'Twinkle Star';
