@@ -35,6 +35,18 @@ h2 {
     font-weight: 300;
 }
 
+h3 {
+    font-family: 'Twinkle Star';
+    font-size: 2rem;
+    color: @main-font-color;
+    font-weight: 300; 
+}
+
+p {
+    font-family: 'Julius Sans One';
+    font-size: 1.2rem;
+}
+
 /* -- NAVBAR -- */
 .nav {
     max-width: 1400px;
@@ -188,4 +200,66 @@ main {
             filter: blur(5px) drop-shadow(0 5px 3px rgba(0, 0, 0, 0.422));  
         }
     }
+}
+
+/* -- TICKET SECTION -- */
+.ticket-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    & .ticket-container {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    & .ticket {
+        height: 398px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: url(../images/ticket-bg.png);
+
+        &:nth-child(2) {
+            transform: translateY(2rem);
+        }
+
+        & img {
+            margin-bottom: 0.3rem;
+            filter: opacity(80%);
+        }
+
+        & .ticket-bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            & a {
+                font-family: 'Ubuntu';
+                text-decoration: underline;
+                color: @main-font-color;
+                margin: 1rem 0;
+                transition: 0.3s ease;
+
+                &:hover {
+                    color: @hover-color; 
+                }
+            }
+        }
+    }
+}
+
+/* -- FOOTER -- */
+footer {
+    width: 100%;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url(../images/footer-bg.png) no-repeat;
+    background-size: cover;
+    margin-top: 5rem;
 }
