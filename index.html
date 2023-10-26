@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funtopia</title>
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
+
 <body>
     <header class="nav">
         <nav class="navbar">
             <div class="socialIcons">
                 <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-bag" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-bag" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z"></path>
+                        <path
+                            d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z">
+                        </path>
                         <path d="M9 11v-5a3 3 0 0 1 6 0v5"></path>
-                     </svg>
+                    </svg>
                 </a>
                 <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
-                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
-                     </svg>
+                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z">
+                        </path>
+                    </svg>
                 </a>
             </div>
             <a href="index.html"><img src="./src/images/logo2.png" alt="funtopia logo" class="logo"></a>
@@ -61,12 +70,41 @@
         <img class="divider" src="./src/images/divider-ferris.png" alt="section divider">
         <!-- SLIDE SECTION -->
         <section class="slide-gallery-section">
-            <h2>“Tauchen Sie ein in eine magische Umgebung voller aufregender Attraktionen, Unterhaltung und unzähliger Erlebnisse, die Ihre Sinne beflügeln werden."</h2>
+            <h2>“Tauchen Sie ein in eine magische Umgebung voller aufregender
+                Attraktionen, Unterhaltung und unzähliger Erlebnisse, die Ihre
+                Sinne beflügeln werden."</h2>
+            <div class="container">
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+                <div class="cards">
+                    <label class="card" for="item-1">
+                        <img class="gal-slider-img" src="./src/images/carousel-rollercoaster.png" alt="song">
+                    </label>
+                    <label class="card" for="item-2">
+                        <img class="gal-slider-img" src="./src/images/carousel-rollercoaster2.png" alt="song">
+                    </label>
+                    <label class="card" for="item-3">
+                        <img class="gal-slider-img" src="./src/images/carousel-stand.png" alt="song">
+                    </label>
+                </div>
+            </div>
         </section>
         <img class="divider" src="./src/images/divider-carousel.png" alt="section divider">
-        <h2>"Erleben Sie magische Momente voller Freude und Adrenalin - sichern Sie sich noch heute Ihr Ticket für unvergesslichen Spaß im Vergnügungspark!"</h2>
+        <h2>"Erleben Sie magische Momente voller Freude und Adrenalin - sichern Sie sich noch heute Ihr Ticket für
+            unvergesslichen Spaß im Vergnügungspark!"</h2>
         <section class="ticket-section"></section>
     </main>
     <footer></footer>
+    <script>
+        let inputs = document.querySelectorAll('input');
+
+        inputs.forEach(function (input) {
+            input.addEventListener('change', function () {
+                document.body.classList.toggle('yo');
+            });
+        });
+    </script>
 </body>
+
 </html>
