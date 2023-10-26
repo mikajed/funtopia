@@ -138,6 +138,7 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+  position: relative;
 }
 .slide-gallery-section .slide-img-container img {
   width: 40%;
@@ -148,9 +149,27 @@ main {
   height: auto;
   z-index: 1;
 }
-.slide-gallery-section .slide-img-container img:first-child,
-.slide-gallery-section .slide-img-container :last-child {
+.slide-gallery-section .slide-img-container img:first-child {
+  position: absolute;
   filter: blur(5px) drop-shadow(0 5px 3px rgba(0, 0, 0, 0.422));
+  left: -8vw;
+  transition: 0.3s ease;
+}
+.slide-gallery-section .slide-img-container img:first-child:hover {
+  filter: none;
+  cursor: pointer;
+}
+.slide-gallery-section .slide-img-container img:last-child {
+  position: absolute;
+  filter: blur(5px) drop-shadow(0 5px 3px rgba(0, 0, 0, 0.422));
+  right: -8vw;
+  transition: 0.3s ease;
+}
+.slide-gallery-section .slide-img-container img:last-child:hover {
+  filter: none;
+  cursor: pointer;
+  transform: translateY(-5px) scale(1.1);
+  z-index: 1;
 }
 /* -- TICKET SECTION -- */
 .ticket-section {
