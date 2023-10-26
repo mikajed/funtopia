@@ -18,30 +18,7 @@ body {
 .divider {
   margin: 5rem 0 0 0;
 }
-h1 {
-  font-family: 'Twinkle Star';
-  font-size: 4rem;
-  color: #292a49;
-  text-align: center;
-  font-weight: 700;
-}
-h2 {
-  font-family: 'Julius Sans One';
-  color: #292a49;
-  text-align: center;
-  font-weight: 300;
-}
-h3 {
-  font-family: 'Twinkle Star';
-  font-size: 2rem;
-  color: #292a49;
-  font-weight: 300;
-}
-p {
-  font-family: 'Julius Sans One';
-  font-size: 1.2rem;
-}
-/* -- NAVS -- */
+/* -- MENUS -- */
 ul {
   display: flex;
 }
@@ -260,5 +237,29 @@ footer .footer-container {
 @font-face {
   font-family: 'Ubuntu';
   src: url(../fonts/Ubuntu/Ubuntu-Bold.ttf) format('truetype');
+  font-weight: 700;
+}
+h1 {
+  font-family: 'Twinkle Star';
+  font-size: 4rem;
+  color: #292a49;
+  text-align: center;
+  font-weight: 700;
+}
+h2 {
+  font-family: 'Julius Sans One';
+  color: #292a49;
+  text-align: center;
+  font-weight: 300;
+}
+h3 {
+  font-family: 'Twinkle Star';
+  font-size: 2rem;
+  color: #292a49;
+  font-weight: 300;
+}
+p {
+  font-family: 'Julius Sans One';
+  font-size: 1.2rem;
   font-weight: 700;
 }
