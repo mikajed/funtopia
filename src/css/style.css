@@ -147,7 +147,7 @@ video {
   border: none;
   border-radius: 10px;
   padding: 0.8rem 1.2rem;
-  background-color: #292a49;
+  background-color: #cf8630;
   font-size: 1rem;
   text-decoration: none;
   font-family: 'Ubuntu';
@@ -155,7 +155,7 @@ video {
   transition: 0.3s ease;
 }
 .showcase-section .showcase-two-col .col-left .showcase-btn:hover {
-  background-color: #cf8630;
+  background-color: #292a49;
 }
 .showcase-section .showcase-two-col .col-right {
   width: 50%;
