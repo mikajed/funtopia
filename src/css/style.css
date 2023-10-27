@@ -8,7 +8,7 @@ html {
 }
 body {
   background-color: #f7f9f4;
-  background: url(../images/hero-bg.png) no-repeat;
+  background: url(../images/hero-bg2.png) no-repeat;
   background-size: contain;
   display: flex;
   justify-content: center;
@@ -56,6 +56,7 @@ ul li a:hover {
 .nav {
   max-width: 1400px;
   width: 100%;
+  z-index: 1;
 }
 .nav .navbar {
   width: 100%;
@@ -72,11 +73,44 @@ ul li a:hover {
 /* -- MAIN -- */
 main {
   max-width: 1200px;
-  width: 70%;
+  width: 100%;
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+/* -- VID SECTION -- */
+.vid-section {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 70vh;
+  top: 0;
+  left: 0;
+  border-top: 1rem solid rgba(221, 82, 18, 0.425);
+  border-bottom: 1rem solid rgba(221, 82, 18, 0.425);
+  background: repeating-linear-gradient(90deg, transparent, transparent 5px, rgba(221, 82, 18, 0.425) 5px, rgba(221, 82, 18, 0.425) 10px);
+}
+.vid-header {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-overlay h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 0.2rem 0 1.2rem #cf8630, 0 -1rem 1.2rem orangered, 0 1rem 1.2rem #40a8d1;
 }
 /* -- HERO SECTION -- */
 #hero-section {
@@ -89,9 +123,53 @@ main {
 /* -- SHOWCASE SECTION -- */
 .showcase-section {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
   gap: 2rem;
+}
+.showcase-section .showcase-two-col {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 2.5rem 0;
+}
+.showcase-section .showcase-two-col .col-left {
+  width: 50%;
+  padding: 0 2rem;
+}
+.showcase-section .showcase-two-col .col-left p {
+  line-height: 1.5rem;
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+.showcase-section .showcase-two-col .col-left .showcase-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 1.2rem;
+  background-color: #292a49;
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: 'Ubuntu';
+  color: #f7f9f4;
+  transition: 0.3s ease;
+}
+.showcase-section .showcase-two-col .col-left .showcase-btn:hover {
+  background-color: #cf8630;
+}
+.showcase-section .showcase-two-col .col-right {
+  width: 50%;
+}
+.showcase-section .showcase-two-col .col-right img {
+  border-radius: 1rem;
+  width: 100%;
+  filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.422));
+  border: 0.5rem solid rgba(221, 82, 18, 0.425);
+  background: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(221, 82, 18, 0.425) 5px, rgba(221, 82, 18, 0.425) 10px);
+}
+.showcase-section .cards {
+  display: flex;
+  flex-direction: row;
 }
 .showcase-section .showcase-card {
   text-align: center;
@@ -117,7 +195,6 @@ main {
   position: absolute;
   bottom: 3px;
   background: linear-gradient(to bottom, #0000007b, #343434);
-  backdrop-filter: blur(3px);
   color: #fff;
   padding: 2rem 0.5rem;
   font-family: 'Julius Sans One';
@@ -126,9 +203,7 @@ main {
 }
 /* -- SLIDE GALLERY SECTION -- */
 .slide-gallery-section {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 5rem;
+  width: 70%;
   display: flex;
   flex-direction: column;
 }
@@ -138,14 +213,16 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+  transition: transform 0.5s ease;
   position: relative;
 }
 .slide-gallery-section .slide-img-container img {
   width: 40%;
   height: auto;
+  transition: transform 0.5s ease;
 }
 .slide-gallery-section .slide-img-container img:nth-child(2) {
-  width: 60%;
+  width: 70%;
   height: auto;
   z-index: 1;
 }
@@ -158,6 +235,9 @@ main {
 .slide-gallery-section .slide-img-container img:first-child:hover {
   filter: none;
   cursor: pointer;
+  transform: translateY(-5px) scale(1.1);
+  filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.422));
+  z-index: 2;
 }
 .slide-gallery-section .slide-img-container img:last-child {
   position: absolute;
@@ -169,6 +249,7 @@ main {
   filter: none;
   cursor: pointer;
   transform: translateY(-5px) scale(1.1);
+  filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.422));
   z-index: 1;
 }
 /* -- TICKET SECTION -- */
@@ -218,7 +299,7 @@ footer {
   width: 100%;
   padding: 10rem 2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background: url(../images/footer-bg.png) no-repeat;
   background-size: cover;
@@ -229,9 +310,9 @@ footer .footer-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 10rem;
   position: absolute;
   bottom: 1rem;
+  gap: 8rem;
 }
 @font-face {
   font-family: 'Twinkle Star';
