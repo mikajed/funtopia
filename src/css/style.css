@@ -170,10 +170,10 @@ video {
 .showcase-section .cards {
   display: flex;
   flex-direction: row;
+  gap: 1.5rem;
 }
 .showcase-section .showcase-card {
   text-align: center;
-  position: relative;
   width: 100%;
   filter: blur(5px) drop-shadow(0 5px 3px rgba(0, 0, 0, 0.422));
   transition: 0.4s ease;
@@ -224,16 +224,17 @@ video {
 .slide-gallery-section .slide-img-container img:nth-child(2) {
   width: 70%;
   height: auto;
+  filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.422));
   z-index: 1;
 }
 .slide-gallery-section .slide-img-container img:first-child {
   position: absolute;
   filter: blur(5px) drop-shadow(0 5px 3px rgba(0, 0, 0, 0.422));
   left: -8vw;
-  transition: 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 .slide-gallery-section .slide-img-container img:first-child:hover {
-  filter: none;
+  filter: blur(0px);
   cursor: pointer;
   transform: translateY(-5px) scale(1.1);
   filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.422));
@@ -243,7 +244,7 @@ video {
   position: absolute;
   filter: blur(5px) drop-shadow(0 5px 3px rgba(0, 0, 0, 0.422));
   right: -8vw;
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
 }
 .slide-gallery-section .slide-img-container img:last-child:hover {
   filter: none;
@@ -312,7 +313,7 @@ footer .footer-container {
   align-items: center;
   position: absolute;
   bottom: 1rem;
-  gap: 8rem;
+  column-gap: 8rem;
 }
 @font-face {
   font-family: 'Twinkle Star';
