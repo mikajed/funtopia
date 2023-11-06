@@ -8,7 +8,7 @@ html {
 }
 body {
   background-color: #f7f9f4;
-  background: url(../images/hero-bg2.png) no-repeat;
+  background: url(../images/hero-bg2.webp) no-repeat;
   background-size: contain;
   display: flex;
   justify-content: center;
